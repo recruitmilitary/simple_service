@@ -139,7 +139,7 @@ module SimpleService
       ]
       options[:default] = defaults
 
-      SimpleService::Configuration.i18n.translate(key, options)
+      SimpleService::Configuration.i18n.translate(key, **options)
     end
 
     def get_message(msg, type)
